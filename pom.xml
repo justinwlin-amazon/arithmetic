@@ -1,16 +1,16 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <groupId>io.github.justinwlin-amazon</groupId>
-    <artifactId>dynamodb-lock-test</artifactId>
+    <groupId>com.amazonaws</groupId>
+    <artifactId>dynamodb-lock-client</artifactId>
     <version>1.2.1</version>
     <packaging>jar</packaging>
     <name>Amazon DynamoDB Lock Client</name>
-    <url>https://github.com/justinwlin-amazon/arithmetic</url>
+    <url>https://github.com/awslabs/amazon-dynamodb-lock-client</url>
     <description>The Amazon DynamoDB Lock Client is a general purpose distributed locking library built on DynamoDB.</description>
     <scm>
-        <connection>scm:git:git://github.com/justinwlin-amazon/arithmetic.git</connection>
-        <developerConnection>scm:git:ssh://github.com:justinwlin-amazon/arithmetic.git</developerConnection>
-        <url>http://github.com/justinwlin-amazon/arithmetic</url>
+        <connection>scm:git:git://github.com/awslabs/amazon-dynamodb-lock-client.git</connection>
+        <developerConnection>scm:git:ssh://github.com:awslabs/amazon-dynamodb-lock-client.git</developerConnection>
+        <url>https://github.com/awslabs/amazon-dynamodb-lock-client</url>
     </scm>
     <properties>
         <!-- general properties -->
@@ -609,12 +609,12 @@
     </profiles>
     <distributionManagement>
         <snapshotRepository>
-            <id>ossrh</id>
-            <url>https://s01.oss.sonatype.org/content/repositories/snapshots</url>
+            <id>aws</id>
+            <url>https://aws.oss.sonatype.org/content/repositories/snapshots</url>
         </snapshotRepository>
         <repository>
-            <id>ossrh</id>
-            <url>https://s01.oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+            <id>aws</id>
+            <url>https://aws.oss.sonatype.org/service/local/staging/deploy/maven2/</url>
         </repository>
     </distributionManagement>
 </project>
